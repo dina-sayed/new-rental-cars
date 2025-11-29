@@ -1,0 +1,467 @@
+.chooseUsSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 4rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.leftSide {
+  position: relative;
+  width: 50%;
+}
+
+.backgroundImg {
+  position: absolute;
+  top: -472px;
+  right: -962px;
+  width: 273% !important;
+  height: auto;
+  display: block;
+}
+
+.carImg {
+  position: absolute;
+  bottom: -250px;
+  left: 33%;
+  transform: translateX(-50%);
+  width: 90% !important;
+  height: auto;
+  z-index: 2;
+}
+
+.rightSide {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popularDeals {
+  background-color: #edf1fa;
+  color: #597cf8;
+  border: 1px solid #d2e3f6;
+  border-radius: 12px;
+  padding: 12px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  width: fit-content;
+  box-shadow: 0 0px 2px rgba(0, 123, 255, 0.15);
+}
+
+.popularTitle {
+  font-weight: 600;
+  font-size: 36px;
+  color: #222;
+  line-height: 1.4;
+  text-align: start;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin: 5px 0 5px -2px;
+}
+
+.featureItem img {
+  width: 122px !important;
+  height: 86px;
+  flex-shrink: 2;
+  object-fit: contain;
+  margin: 3px !important;
+}
+
+.featureItem div {
+  display: flex;
+  flex-direction: column;
+  gap: 0; 
+}
+
+.featureItem h6 {
+  margin: 4px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 17px; 
+}
+
+.featureItem small {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin-top: -10px !important; 
+  margin-left: 5px !important; 
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Desktop Large (1200px and above) */
+@media (min-width: 1200px) {
+  .chooseUsSection {
+    padding: 4rem 5rem;
+    gap: 4rem;
+  }
+
+  .popularTitle {
+    font-size: 40px;
+  }
+
+  .featureItem h6 {
+    font-size: 1.2rem;
+  }
+
+  .featureItem small {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop Medium (992px - 1199px) */
+@media (max-width: 1199px) {
+  .chooseUsSection {
+    padding: 3.5rem 2.5rem;
+    gap: 2.5rem;
+  }
+
+  .backgroundImg {
+    top: -400px;
+    right: -850px;
+    width: 250% !important;
+  }
+
+  .carImg {
+    bottom: -200px;
+    left: 35%;
+    width: 85% !important;
+  }
+
+  .popularTitle {
+    font-size: 34px;
+  }
+
+  .featureItem img {
+    width: 110px !important;
+    height: 80px;
+  }
+
+  .featureItem h6 {
+    font-size: 1.05rem;
+  }
+
+  .featureItem small {
+    font-size: 0.85rem;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (max-width: 991px) {
+  .chooseUsSection {
+    flex-direction: column;
+    padding: 3rem 2rem;
+    gap: 3rem;
+  }
+
+  .leftSide {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: visible;
+  }
+
+  .backgroundImg {
+    position: absolute;
+    top: 0;
+    right: -100px;
+    width: 120% !important;
+    max-width: 700px;
+  }
+
+  .carImg {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    left: auto;
+    transform: none;
+    width: 70% !important;
+    max-width: 500px;
+  }
+
+  .rightSide {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .popularDeals {
+    font-size: 16px;
+    padding: 10px 28px;
+  }
+
+  .popularTitle {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .features {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .featureItem {
+    text-align: left;
+    gap: 15px;
+  }
+
+  .featureItem img {
+    width: 100px !important;
+    height: 75px;
+  }
+
+  .featureItem h6 {
+    font-size: 1.1rem;
+  }
+
+  .featureItem small {
+    font-size: 0.9rem;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (max-width: 767px) {
+  .chooseUsSection {
+    padding: 2.5rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .popularDeals {
+    font-size: 14px;
+    padding: 10px 24px;
+    letter-spacing: 1px;
+  }
+
+  .popularTitle {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+
+  .features {
+    gap: 1.2rem;
+  }
+
+  .featureItem {
+    gap: 12px;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .featureItem img {
+    width: 80px !important;
+    height: 65px;
+    flex-shrink: 0;
+  }
+
+  .featureItem div {
+    align-items: flex-start;
+  }
+
+  .featureItem h6 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    text-align: left;
+  }
+
+  .featureItem small {
+    font-size: 0.85rem;
+    text-align: left;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .chooseUsSection {
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .popularDeals {
+    font-size: 12px;
+    padding: 8px 20px;
+  }
+
+  .popularTitle {
+    font-size: 24px;
+    padding: 0 10px;
+  }
+
+  .popularTitle br {
+    display: none;
+  }
+
+  .features {
+    gap: 1rem;
+    padding: 0 5px;
+  }
+
+  .featureItem {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 10px;
+  }
+
+  .featureItem img {
+    width: 70px !important;
+    height: 60px;
+    flex-shrink: 0;
+  }
+
+  .featureItem div {
+    align-items: flex-start;
+  }
+
+  .featureItem h6 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .featureItem small {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-left: 0 !important;
+  }
+}
+
+/* Mobile Small (Below 480px) */
+@media (max-width: 479px) {
+  .chooseUsSection {
+    padding: 1.5rem 0.75rem;
+    gap: 1.5rem;
+  }
+
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .popularDeals {
+    font-size: 11px;
+    padding: 7px 18px;
+  }
+
+  .popularTitle {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  .features {
+    gap: 0.8rem;
+  }
+
+  .featureItem {
+    gap: 8px;
+  }
+
+  .featureItem img {
+    width: 65px !important;
+    height: 55px;
+  }
+
+  .featureItem h6 {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+  }
+
+  .featureItem small {
+    font-size: 0.75rem;
+  }
+}
+
+/* Extra Small Mobile (Below 360px) */
+@media (max-width: 359px) {
+  .chooseUsSection {
+    padding: 1.5rem 0.5rem;
+  }
+
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .popularDeals {
+    font-size: 10px;
+    padding: 6px 16px;
+  }
+
+  .popularTitle {
+    font-size: 18px;
+  }
+
+  .featureItem img {
+    width: 60px !important;
+    height: 50px;
+  }
+
+  .featureItem h6 {
+    font-size: 0.85rem;
+  }
+
+  .featureItem small {
+    font-size: 0.7rem;
+  }
+}
+
+/* Hide background image on very small screens if needed */
+@media (max-width: 320px) {
+  .leftSide {
+    display: none;
+  }
+
+  .rightSide {
+    width: 100%;
+  }
+
+  .popularTitle {
+    font-size: 16px;
+  }
+
+  .featureItem img {
+    width: 55px !important;
+    height: 45px;
+  }
+}

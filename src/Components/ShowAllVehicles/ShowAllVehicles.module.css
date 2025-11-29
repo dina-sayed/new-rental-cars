@@ -1,0 +1,248 @@
+/* Badge Section */
+.popularDeals {
+    background-color: #EDF1FA;
+    color: #597CF8;
+    border: 1px solid #d2e3f6;
+    border-radius: 12px;
+    padding: 15px 33px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    box-shadow: 0 0px 2px rgba(0, 123, 255, 0.15);
+    margin-top: 30px !important;
+    display: inline-block;
+}
+
+.popularTitle {
+  text-align: center;
+  font-weight: 600 !important;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 60px !important;
+  color: #1a1a1a;
+}
+
+/* Car Card */
+.carCard {
+  padding-top: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.carCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+/* Car Image */
+.carImage {
+  display: block;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 99% !important;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Car Title */
+.carTitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 5px ! important;
+
+  color: #1a1a1a;
+}
+
+/* Review Section */
+.reviewSection {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+}
+
+.starIcon {
+  color: #ffc107;
+  font-size: 1rem;
+}
+
+.reviewText {
+  font-size: 1.05rem;
+  color: #666;
+  margin: 0px !important;
+}
+
+/* Specifications */
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px !important;
+}
+
+.specItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.specItem i {
+  color: #8C8D90;
+  font-size: 1rem;
+}
+.automatic {
+  margin-right: 35px !important;
+}
+
+/* Divider */
+.divider {
+  margin: 16px 0;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Price Section */
+.priceSection {
+  margin-bottom: 1px !important;
+  margin-top: -5px !important;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.priceLabel {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0px !important;
+}
+
+.priceAmount {
+
+margin-right: 10px !important;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.perDay {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* Availability Badge */
+.availabilityBadge {
+  margin-top: 8px;
+  margin-bottom: 8px !important;
+}
+
+.available {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.notAvailable {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* View Details Button */
+.viewDetailsBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #597CF8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.viewDetailsBtn:hover {
+  background-color: #4566d6;
+  transform: translateX(4px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .popularTitle {
+    font-size: 32px;
+  }
+ ._specItem_4spul_175 i {
+    font-size: 0.9rem;
+    
+  }
+  
+  .carImage {
+    height: 180px;
+  }
+}
+
+
+/* Pagination Custom Styling */
+:global(.pagination) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+:global(.pagination .page-item) {
+  display: inline-block;
+  
+}
+
+:global(.pagination .page-link) {
+  color: #597cf8;
+  border: 1px solid #dee2e6;
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+:global(.pagination .page-link:hover) {
+  background-color: #edf1fa;
+  color: #4566d6;
+}
+
+:global(.pagination .page-item.active .page-link) {
+  background-color: #597cf8;
+  border-color: #597cf8;
+  color: #fff;
+}
+
+:global(.pagination .page-item.disabled .page-link) {
+  color: #494f55;
+  background-color: #E9ECEF;
+  border-color: #E9ECEF;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+
+

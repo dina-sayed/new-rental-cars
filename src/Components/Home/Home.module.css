@@ -1,0 +1,44 @@
+
+body {
+  overflow-x: hidden;
+  background-image: url("/Frame-BSXj5G2V.png");
+  background-size: 580px 680px;
+  background-repeat: no-repeat;
+  background-position: 100% 30px;
+}
+
+.heroWrapper {
+  margin-top: 80px;
+}
+
+
+.heroTitle {
+  font-size: 40px;
+  line-height: 1.3;
+}
+
+.easily {
+  color: #0d6efd;
+}
+
+.carSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.animatedCar {
+  width: 100%;
+  max-width: 520px;
+  transform: translateX(-120%);
+  animation: carMove 2s ease-out forwards;
+  margin-top: 20px;
+}
+
+@keyframes carMove {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

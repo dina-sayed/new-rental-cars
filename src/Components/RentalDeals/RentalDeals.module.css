@@ -1,0 +1,729 @@
+/* ================== Hero Section ================== */
+
+.heroSection {
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1400px;
+  width: 100%;
+  position: relative;
+}
+
+.heroText {
+  flex: 1;
+  min-width: 300px;
+  z-index: 5;
+}
+
+.heroText h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  text-align: center;
+  margin-left: -600px !important;
+  margin-top: 300px !important;
+}
+
+.heroText h1 .highlight {
+  color: #1572D3; 
+  display: block; 
+}
+
+.heroText p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: -180px !important;
+}
+
+.heroCar {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 300px;
+  position: relative;
+}
+.heroCar {
+  background-image: url("/Frame-BSXj5G2V.png"); 
+  background-repeat: no-repeat;
+  background-size:95% 100%;     
+  background-position: right top !important;  
+position: relative;
+top: -50px;
+z-index: 2;
+left: 100px;
+
+}
+
+
+.heroCar img {
+  margin-right: -350px !important;
+  margin-top: 70px !important;
+  width: 150% !important;
+  animation: parkCar 1.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  position: relative;
+  z-index: 10;
+  opacity: 1 !important;
+  will-change: transform;
+  -webkit-animation: parkCar 1.4s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes parkCar {
+  0% {
+    transform: translateX(120%) translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  45% {
+    transform: translateX(-5%) translateY(-3px) rotate(-1.5deg);
+    opacity: 1;
+  }
+  65% {
+    transform: translateX(2%) translateY(1px) rotate(0.8deg);
+    opacity: 1;
+  }
+  82% {
+    transform: translateX(-0.8%) translateY(0px) rotate(-0.3deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0%) translateY(0px) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* ================== Popular Deals Badge ================== */
+.popularDeals {
+  background-color: #EDF1FA;
+  color: #597CF8;
+  border: 1px solid #d2e3f6;
+  border-radius: 12px;
+  padding: 15px 33px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  box-shadow: 0 0px 2px rgba(0, 123, 255, 0.15);
+  margin-top: 30px !important;
+  display: inline-block;
+}
+
+/* ================== Section Title ================== */
+.popularTitle {
+  text-align: center;
+  font-weight: 600 !important;
+  font-size: 45px;
+  letter-spacing: 1px;
+  margin-bottom: 60px !important;
+  color: #1a1a1a;
+}
+
+/* ================== Car Card ================== */
+.carCard {
+  padding-top: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+
+.carCard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  transform: translateY(-4px);
+}
+
+.carImage {
+  width: 95% !important;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  margin: 0 auto;
+}
+
+.carTitle {
+  font-weight: 500;
+  font-size: 1.9rem;
+  margin-bottom: 12px;
+  color: #1a1a1a;
+  font-family: "system-ui", sans-serif;
+}
+
+/* ================== Review Section ================== */
+.reviewSection {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px !important;
+}
+
+.starIcon {
+  color: #ffc107;
+  font-size: 1.2rem;
+}
+
+.reviewText {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* ================== Specifications ================== */
+.specRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.specItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  color: #555;
+  flex: 1;
+}
+
+.specItem i {
+  color: #8c8d90;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.automatic i {
+  margin-right: 0px;
+}
+
+.automatic span {
+  margin-right: 34px;
+}
+
+/* ================== Divider ================== */
+.divider {
+  margin: 16px 0;
+  border-top: 2px solid #ddd9d9;
+}
+
+/* ================== Price Section ================== */
+.priceSection {
+  margin: 0px !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.priceLabel {
+  display: block;
+  font-size: 1.2rem;
+  color: #666;
+  margin-left: 10px !important;
+}
+
+.priceAmount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-right: 10px !important;
+}
+
+.perDay {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #666;
+}
+
+/* ================== Availability Badge ================== */
+.availabilityBadge {
+  margin-top: 5px;
+  display: block !important;
+  text-align: start !important;
+  margin-bottom: 10px !important;
+}
+
+.availableTag {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #d4edda !important;
+  color: #155724 !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.notAvailableTag {
+  display: inline-block;
+  padding: 4px 10px;
+  background-color: #f8d7da !important;
+  color: #721c24 !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+/* ================== Buttons ================== */
+.viewDetailsBtn {
+  width: 100%;
+  padding: 12px;
+  background-color: #597CF8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.viewDetailsBtn:hover {
+  background-color: #4566d6;
+  transform: translateX(4px);
+}
+
+.showAllBtn {
+  padding: 16px 60px;
+  background-color: transparent;
+  color: #8c8d90;
+  border: 2px solid #7f7f80;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1.7rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.showAllBtn:hover {
+  background-color: #6C757D;
+  color: white;
+  transform: translateX(4px);
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Desktop Large (1200px and above) */
+@media (min-width: 1200px) {
+  .heroText h1 {
+    font-size: 3rem;
+    margin-left: -280px !important;
+    margin-top: 85px !important;
+  }
+  
+  .heroText p {
+    font-size: 1.2rem;
+    margin-left: 25px !important;
+  }
+
+  .heroCar img {
+          margin-right: 38px !important;
+        margin-top: 159px !important;
+        width: 113% !important;
+  }
+
+  .popularTitle {
+    font-size: 48px;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+  .heroText h1 {
+    font-size: 3.5rem;
+    margin-left: -400px !important;
+    margin-top: 200px !important;
+  }
+  
+  .heroText p {
+    font-size: 1.1rem;
+    margin-left: -120px !important;
+  }
+
+  .heroCar img {
+    margin-right: -250px !important;
+    margin-top: 50px !important;
+    width: 140% !important;
+  }
+
+  .popularTitle {
+    font-size: 40px;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (max-width: 991px) {
+  .heroSection {
+    padding: 40px 20px;
+  }
+
+  .heroContent {
+    gap: 30px;
+  }
+
+  .heroText {
+    min-width: 100%;
+    text-align: center;
+  }
+
+  .heroText h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .heroText p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-left: 0 !important;
+  }
+
+  .heroCar {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .heroCar img {
+    width: 80% !important;
+    max-width: 600px;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .popularDeals {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+
+  .popularTitle {
+    font-size: 36px;
+    margin-bottom: 40px !important;
+  }
+
+  .carTitle {
+    font-size: 1.6rem;
+  }
+
+  .showAllBtn {
+    font-size: 1.5rem;
+    padding: 14px 50px;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (max-width: 767px) {
+  .heroSection {
+    padding: 30px 15px;
+  }
+
+  .heroText h1 {
+    font-size: 2.5rem;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .heroText p {
+    font-size: 1rem;
+    margin-left: 0 !important;
+  }
+
+  .heroCar img {
+    width: 90% !important;
+    max-width: 500px;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .popularDeals {
+    font-size: 14px;
+    padding: 10px 24px;
+    letter-spacing: 1px;
+  }
+
+  .popularTitle {
+    font-size: 28px;
+    margin-bottom: 30px !important;
+  }
+
+  .carCard {
+    margin-bottom: 20px;
+  }
+
+  .carImage {
+    height: 160px;
+  }
+
+  .carTitle {
+    font-size: 1.4rem;
+  }
+
+  .reviewText {
+    font-size: 0.95rem;
+  }
+
+  .specItem {
+    font-size: 0.8rem;
+  }
+
+  .specItem i {
+    font-size: 0.9rem;
+  }
+
+  .priceLabel,
+  .priceAmount {
+    font-size: 1.1rem;
+  }
+
+  .perDay {
+    font-size: 1rem;
+  }
+
+  .showAllBtn {
+    font-size: 1.3rem;
+    padding: 12px 40px;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  .heroSection {
+    padding: 20px 10px;
+  }
+
+  .heroText h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .heroText p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    margin-left: 0 !important;
+  }
+
+ .heroCar {
+    background-image: none !important;
+  }
+  .heroCar img {
+    width: 100% !important;
+    max-width: 100%;
+    margin-right: 200px !important;
+    margin-top: 100px !important;
+  }
+
+  .popularDeals {
+    font-size: 12px;
+    padding: 8px 20px;
+    margin-top: 20px !important;
+  }
+
+  .popularTitle {
+    font-size: 24px;
+    margin-bottom: 25px !important;
+    padding: 0 10px;
+  }
+
+  .carCard {
+    padding-top: 8px;
+  }
+
+  .carImage {
+    height: 140px;
+    width: 96% !important;
+  }
+
+  .carTitle {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .reviewSection {
+    margin-bottom: 8px !important;
+  }
+
+  .starIcon {
+    font-size: 1rem;
+  }
+
+  .reviewText {
+    font-size: 0.85rem;
+  }
+
+  .specRow {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .specItem {
+    font-size: 0.75rem;
+    justify-content: flex-start;
+  }
+
+  .automatic span {
+    margin-right: 0;
+  }
+
+  .divider {
+    margin: 12px 0;
+  }
+
+  .priceSection {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .priceLabel {
+    font-size: 1rem;
+    margin-left: 5px !important;
+  }
+
+  .priceAmount {
+    font-size: 1rem;
+    margin-right: 5px !important;
+  }
+
+  .perDay {
+    font-size: 0.9rem;
+  }
+
+  .availabilityBadge {
+    margin-top: 8px;
+    margin-bottom: 8px !important;
+  }
+
+  .availableTag,
+  .notAvailableTag {
+    font-size: 0.75rem;
+    padding: 3px 8px;
+  }
+
+  .viewDetailsBtn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .showAllBtn {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Mobile Small (Below 480px) */
+@media (max-width: 479px) {
+  .heroText h1 {
+    font-size: 1.75rem;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+  
+  .heroText p {
+    font-size: 0.9rem;
+    margin-left: 0 !important;
+  }
+
+  .heroCar img {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .popularDeals {
+    font-size: 11px;
+    padding: 7px 18px;
+  }
+
+  .popularTitle {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .carTitle {
+    font-size: 1.2rem;
+  }
+
+  .reviewText {
+    font-size: 0.8rem;
+  }
+
+  .specItem {
+    font-size: 0.7rem;
+  }
+
+  .priceLabel,
+  .priceAmount {
+    font-size: 0.95rem;
+  }
+
+  .viewDetailsBtn {
+    font-size: 0.85rem;
+    padding: 9px;
+  }
+
+  .showAllBtn {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+}
+
+/* Extra Small Mobile (Below 360px) */
+@media (max-width: 359px) {
+  .heroText h1 {
+    font-size: 1.5rem;
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .heroText p {
+    margin-left: 0 !important;
+  }
+
+  .heroCar img {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .popularTitle {
+    font-size: 18px;
+  }
+
+  .carTitle {
+    font-size: 1.1rem;
+  }
+
+  .showAllBtn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+  }
+}

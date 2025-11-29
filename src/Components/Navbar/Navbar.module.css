@@ -1,0 +1,308 @@
+body {
+  /* overflow-x: hidden;
+  background-image: url("/Frame-BSXj5G2V.png");
+  background-size: 580px 680px;
+  background-repeat: no-repeat;
+  background-position: 100% 30px; */
+}
+
+.logo {
+  width: 170px !important;
+  object-fit: contain;
+  transition: width 0.3s ease;
+}
+
+.navItem {
+  color: #333 !important;
+  font-weight: 500;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.navItem:hover {
+  color: #1572D3 !important;
+}
+
+:global(.nav-link) {
+  font-weight: 400 !important;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.authButtons button {
+  flex: 1;
+  min-width: 100px;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+
+/* Desktop Large (1200px and above) */
+@media (min-width: 1200px) {
+  body {
+    background-size: 580px 680px;
+    background-position: 100% 30px;
+  }
+
+  .logo {
+    width: 170px !important;
+  }
+
+  .navItem {
+    margin: 0 15px;
+    font-size: 1rem;
+  }
+}
+
+/* Desktop (992px - 1199px) */
+@media (max-width: 1199px) {
+  body {
+    background-size: 500px 600px;
+    background-position: 100% 40px;
+  }
+
+  .logo {
+    width: 150px !important;
+  }
+
+  .navItem {
+    margin: 0 10px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (max-width: 991px) {
+  body {
+    background-size: 400px 500px;
+    background-position: 95% 50px;
+  }
+
+  .logo {
+    width: 140px !important;
+  }
+
+  .navItem {
+    margin: 10px 0;
+    padding: 8px 15px;
+    display: block;
+    font-size: 1rem;
+  }
+
+  .navItem:hover {
+    background-color: #f0f4ff;
+    border-radius: 8px;
+  }
+
+  :global(.navbar-collapse) {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+  }
+
+  :global(.navbar-toggler) {
+    border: 2px solid #1572D3;
+    padding: 8px 12px;
+  }
+
+  :global(.navbar-toggler-icon) {
+    width: 24px;
+    height: 24px;
+  }
+
+  .authButtons {
+    justify-content: center;
+    margin: 15px auto;
+    max-width: 350px;
+  }
+
+  .authButtons button {
+    flex: 1;
+  }
+}
+
+/* Tablet Portrait (576px - 767px) */
+@media (max-width: 767px) {
+  body {
+    background-size: 300px 400px;
+    background-position: 100% 60px;
+    background-attachment: fixed;
+  }
+
+  .logo {
+    width: 120px !important;
+  }
+
+  .navItem {
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 0.95rem;
+  }
+
+  :global(.navbar) {
+    padding: 10px 15px;
+  }
+
+  :global(.navbar-collapse) {
+    padding: 12px;
+  }
+
+  .authButtons {
+    justify-content: center;
+    margin: 12px auto;
+    max-width: 320px;
+  }
+
+  .authButtons button {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile (480px - 575px) */
+@media (max-width: 575px) {
+  body {
+    background-size: 250px 350px;
+    background-position: 100% 70px;
+  }
+
+  .logo {
+    width: 110px !important;
+  }
+
+  .navItem {
+    margin: 6px 0;
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  :global(.navbar) {
+    padding: 8px 12px;
+  }
+
+  :global(.navbar-brand) {
+    margin-right: 0;
+  }
+
+  :global(.navbar-toggler) {
+    padding: 6px 10px;
+    font-size: 1.1rem;
+  }
+
+  :global(.navbar-collapse) {
+    padding: 10px;
+    margin-top: 8px;
+  }
+
+  .authButtons {
+    justify-content: center;
+    margin: 12px auto;
+    max-width: 280px;
+    gap: 8px;
+  }
+
+  .authButtons button {
+    font-size: 0.95rem;
+    padding: 8px 16px;
+  }
+}
+
+/* Mobile Small (Below 480px) */
+@media (max-width: 479px) {
+  body {
+    background-size: 200px 300px;
+    background-position: 100% 80px;
+  }
+
+  .logo {
+    width: 100px !important;
+  }
+
+  .navItem {
+    margin: 5px 0;
+    padding: 8px 10px;
+    font-size: 0.85rem;
+  }
+
+  :global(.navbar) {
+    padding: 8px 10px;
+  }
+
+  :global(.navbar-toggler) {
+    padding: 5px 8px;
+    font-size: 1rem;
+  }
+
+  :global(.navbar-collapse) {
+    padding: 8px;
+  }
+
+  .authButtons {
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 250px;
+    gap: 6px;
+  }
+
+  .authButtons button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+  }
+}
+
+/* Extra Small Mobile (Below 360px) */
+@media (max-width: 359px) {
+  body {
+    background-size: 180px 280px;
+    background-position: 100% 90px;
+  }
+
+  .logo {
+    width: 90px !important;
+  }
+
+  .navItem {
+    margin: 4px 0;
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  :global(.navbar) {
+    padding: 6px 8px;
+  }
+
+  :global(.navbar-toggler) {
+    padding: 4px 6px;
+    font-size: 0.9rem;
+  }
+
+  :global(.navbar-collapse) {
+    padding: 6px;
+  }
+
+  .authButtons {
+    justify-content: center;
+    margin: 10px auto;
+    max-width: 220px;
+    gap: 5px;
+  }
+
+  .authButtons button {
+    font-size: 0.85rem;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    background-image: none;
+  }
+}

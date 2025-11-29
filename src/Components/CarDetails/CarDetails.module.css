@@ -1,0 +1,219 @@
+/* ================== Image Area ================== */
+.imageContainer {
+  background: linear-gradient(135deg, #e8f0fe 0%, #f0f4ff 100%);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 96%;
+}
+
+.carDetailImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+/* ================== Why Choose Us ================== */
+.whyChooseUs {
+  background-color: #EDF1FA;
+  color: #597CF8;
+  border: 1px solid #d2e3f6;
+  border-radius: 12px;
+  padding: 15px 28px;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+/* ================== Main Title ================== */
+.mainTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+/* ================== Features ================== */
+.featuresList {
+  margin-bottom: 10px !important;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px 10px;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 5px 0;
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  background-color: #EDF1FA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #597CF8;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.featureText {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* ================== Car Info ================== */
+.carInfo {
+  background-color: #f8f9fa;
+  padding: 24px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+.carInfo h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+
+.infoText {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.infoText strong {
+  color: #1a1a1a;
+  margin-right: 8px;
+}
+
+/* ================== Availability ================== */
+.available {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.notAvailable {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ================== Back Button ================== */
+.backButton {
+  padding: 14px 32px;
+  background-color: #597CF8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.backButton:hover {
+  background-color: #4566d6;
+  transform: translateX(-4px);
+}
+
+/* ====================== Responsive ============================ */
+
+@media (max-width: 992px) {
+  .imageContainer {
+    height: 380px;
+  }
+
+  .mainTitle {
+    font-size: 2rem;
+  }
+
+  .featuresList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ============= Mobiles ============= */
+@media (max-width: 768px) {
+  .imageContainer {
+    height: 320px;
+    margin-bottom: 20px;
+  }
+
+  .mainTitle {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .whyChooseUs {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .featuresList {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .featureIcon {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .featureText {
+    font-size: 1rem;
+  }
+
+  .carInfo {
+    padding: 18px;
+  }
+
+  .carInfo h4 {
+    text-align: center;
+  }
+
+  .backButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* ============= Very Small Mobiles ============= */
+@media (max-width: 480px) {
+  .mainTitle {
+    font-size: 1.6rem;
+  }
+
+  .imageContainer {
+    height: 260px;
+  }
+
+  .featuresList {
+    grid-template-columns: 1fr;
+  }
+}
